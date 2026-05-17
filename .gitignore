@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated outputs
+output/
+
+# Local input data
+input/*
+!input/.gitkeep
+!input/lectures/
+input/lectures/*
+!input/lectures/.gitkeep
+!input/references/
+input/references/*
+!input/references/.gitkeep
+!input/explanations/
+input/explanations/*
+!input/explanations/.gitkeep
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

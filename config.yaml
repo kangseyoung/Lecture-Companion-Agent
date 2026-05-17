@@ -1,0 +1,32 @@
+input:
+  lectures_dir: "input/lectures"
+  references_dir: "input/references"
+  explanations_dir: "input/explanations"
+
+output:
+  root_dir: "output"
+
+generation:
+  use_references: true
+  use_explanations: true
+  overwrite_existing_notes: false
+
+matching:
+  explanation_match_strategy: "stem_contains"
+  allowed_explanation_suffixes:
+    - "_explanation"
+    - "_explanations"
+    - "_notes"
+    - "_gpt"
+    - "_설명"
+    - "_해설"
+
+layout:
+  page_size: "A4_landscape"
+  left_width_ratio: 0.52
+  right_width_ratio: 0.48
+  margin: 24
+
+model:
+  provider: "openai"
+  model_name: "gpt-4.1-mini"
